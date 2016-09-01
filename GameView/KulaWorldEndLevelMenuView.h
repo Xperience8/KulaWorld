@@ -5,7 +5,7 @@
 class KulaWorldEndLevelMenuView : public MenuView
 {
 public:
-	KulaWorldEndLevelMenuView(std::weak_ptr<Actor> &pActor) : MenuView(pActor) { }
+	explicit KulaWorldEndLevelMenuView(std::weak_ptr<Actor> &pActor) : MenuView(pActor) { }
 	~KulaWorldEndLevelMenuView() { }
 
 	// Only concerned in Enter and LTM

@@ -10,7 +10,7 @@ typedef PhysXCharacterPhysicsComponent CharacterPhysicsComponent;
 class KulaWorldView : public PlayerView
 {
 public:
-	KulaWorldView(std::weak_ptr<Actor> &pActor) : PlayerView(pActor), m_CanChangeGravity(false) { }
+	explicit KulaWorldView(std::weak_ptr<Actor> &pActor) : PlayerView(pActor), m_CanChangeGravity(false) { }
 	~KulaWorldView() { }
 
 	// Create controller and camera

@@ -5,7 +5,7 @@
 class KulaWorldCamera : public GameCamera
 {
 public:
-	KulaWorldCamera(float offsetAngle) : m_OffsetFromLook(offsetAngle)
+	explicit KulaWorldCamera(float offsetAngle) : m_OffsetFromLook(offsetAngle)
 	{
 		SetOffsetFromActor(DirectX::XMVectorSet(0.f, 0.7f, -0.7f, 0.f));
 	}
