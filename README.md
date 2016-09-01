@@ -1,0 +1,7 @@
+# KulaWorld
+Windows, EightEngine, C++ DirectX 11, Solo project
+
+Primary objective in Kula World is to collect specific number of keys to open exit. Secondary objective is to collect all coins. Time to complete level is limited. When player won't collect all keys on time or falls or hits trap, level will be restarted. If player successfully completes level, summary screen will be showed, which shows how many stars he gets. To get more stars, you have to complete level faster and collect more coins(3 stars => all coins).
+
+Player controls sphere, which can move only forward, but it can turn to the right or left. When sphere comes to the end of the ledge(like picture 3), it won't fall, because gravity will change. If you fall from ledge like picture 1(when you turn to the right or left), sphere will fall, gravity won't change. Custom system is developed for changing gravity. There are no triggers or special maps. Only ray casts and math are used. When player is trying to change gravity, two ray casts will be used, which checks whether player can move to the right or left. If he can(corner, picture 2), changing gravity will fail and player will fall. There is no custom animation for changing gravity and no physics hacks. Sphere will start falling, after slight amount of time, gravity will change and sphere will fall to the new part of the map. Player can jump, but only on ledges which are rotated like him.
+
